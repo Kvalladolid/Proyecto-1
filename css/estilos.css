@@ -1,0 +1,418 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+    font:menu;
+    box-sizing: border-box;
+}
+
+/* ESTILO BARRA DE SCROLL*/
+body::-webkit-scrollbar{
+    width: 8px;
+    
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: chocolate;
+    border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background-color: cornsilk;
+    box-shadow: 0 0 2px 1px (0, 0, 0, 0.2);
+}
+
+body::-webkit-scrollbar-thumb:active{
+    background: #f18888;
+}
+
+/* FIN ESTILO BARRA DE SCROLL*/
+
+/* ESTILO TRACK DE SCROLL*/
+
+body::-webkit-scrollbar-track{
+    background: #fdeded;
+    border-radius: 4px;
+}
+
+body::-webkit-scrollbar-track:hover,
+body::-webkit-scrollbar-track:active{
+    background: #f9cdcd;
+}
+
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: chocolate;
+   
+}
+
+a:hover{
+    color: white;
+}
+
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/photo.jpeg);
+    background-blend-mode: soft-light;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.header ul {
+    display: flex;
+    
+    
+}
+
+ul{
+    
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    display: flex;
+    justify-content: flex-end;
+   
+}
+
+ ul li {
+    margin-top: 20px;
+    margin-right: 40px;
+    padding: 0;
+    list-style: none;
+    
+}
+
+
+.hd-encabezdo{
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+   
+
+}
+
+.HD{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: white;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin: 13%;
+    font-family: 'Libre Barcode 39 Text', cursive;
+    letter-spacing: 35px;
+}
+
+
+main .historia{
+    width: 100%;
+    height: auto;
+
+}
+
+main .historia .container_all {
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+main .historia .container_all h1 {
+    text-align: center;
+    padding-top: 120px;
+    font-family: Amiri;
+    font-weight: 1000px;
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+main .historia .container_all .line {
+    width: 15%;
+    height: 5px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #000;
+}
+
+main .historia .container_all .container_text {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main .historia .container_all .container_text .conta1, .conta2 {
+    width: 48%;
+    height: auto;
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/*MOTOS*/
+
+.mis_motos {
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    padding-bottom: 60px;
+}
+
+.mis_motos .text_main {
+    width: 60%;
+    padding-top: 60px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #c2c2c2;
+}
+
+.mis_motos .container_allmotos {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+.mis_motos .container_allmotos .picture {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.mis_motos .container_allmotos .picture .conta5, .conta6, .conta7, .conta8 {
+    width: 280px;
+    height: 280px;
+    margin-bottom: 3rem;
+}
+
+.mis_motos .container_allmotos .picture .conta5 img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.mis_motos .container_allmotos .picture .conta6 img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.mis_motos .container_allmotos .picture .conta7 img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.mis_motos .container_allmotos .picture .conta8 img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.mis_motos img {
+    width: 30%;
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 550px) {
+    .OUR_FOOD .container_allfood .picture .conta5, .conta6, .conta7, .conta8 {
+        width: 220px;
+        height: 220px;
+        overflow: hidden;
+        padding: 1%;
+        margin-bottom: 0;
+
+    } 
+}
+
+@media screen and (max-width: 400px) {
+    .mis_motos .container_allmotos {
+        flex-wrap: wrap;
+    }
+
+    .mis_motos .container_allmotos .picture {
+        width: 90%;
+        }
+
+        .mis_motos .container_allmotos .picture .conta5, .conta6, .conta7, .conta8 {
+            width: 90%;
+        }
+
+    }
+
+
+
+/* ACCESORIOS */
+    .accesorios {
+        width: 100%;
+        height: auto;
+        background: #c2c2c265;
+        padding-bottom: 90px;
+    }
+
+    .accesorios h3 {
+        width: 100%;
+        height: auto;
+        padding-top: 90px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 300px;
+        letter-spacing: 5px;
+        margin-bottom: 45px;
+    }
+
+    .accesorios .container_accesorios {
+        width: 90%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .accesorios .container_accesorios .acces {
+        width: 30%;
+        height: 30%;
+        border-radius: 3px;
+        margin-bottom: 15px;
+    
+    }
+
+    .accesorios .container_accesorios .acces img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 5px;
+        -webkit-box-shadow: 10px 5px 5px 0 rgba(43,55,96,1);
+        -moz-box-shadow: 10px 5px 5px 0 rgba(43,55,96,1);
+        box-shadow: 10px 5px 5px 0 rgba(43,55,96,1);
+    }
+
+
+
+    /*CONTACTO */
+
+
+    .contactos {
+        background-color: grey ;
+    }
+
+    .contactos .container_contacto{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 60px;
+    } 
+
+
+    .contactos .container_contacto .container_contact {
+        width: 100%;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+
+    /*FORMULARIO  */
+
+    .contactos .container_contacto .formulario {
+        width: 50%;
+    }
+
+
+    .contactos .container_contacto .formulario .container_formulario {
+        width: 80%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+
+    .contactos .container_contacto .formulario .container_formulario .text_formulario {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .contactos .container_contacto .formulario .container_formulario .for {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+    }
+
+
+    .contactos .container_contacto .formulario .container_formulario .for input[type="text"], 
+    .contactos .container_contacto .formulario .container_formulario .for input[type="email"], 
+    .contactos .container_contacto .formulario .container_formulario .for textarea {
+        width: 100%;
+        min-width: 100%;
+        max-width: 90%;
+        min-height: 40px;
+        max-height: 150px;
+        margin-bottom: 15px;
+    }
+
+
+    
+    .contactos .container_contacto .formulario .container_formulario .boton {
+        width: 30%;
+        border-radius: 2px;
+        background-color: white;
+        margin-left: 25%;
+        padding: 15px;
+        margin-bottom: 5px;
+    }
+
+
+    .footer .firma {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        border-top: 1px solid #ccc;
+        text-align: center;
+    }
+
+    
